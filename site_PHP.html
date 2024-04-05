@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traitement du formulaire</title>
+</head>
+<body>
+  <form action="vrai_php.php" method="post">
+	  <fieldset>
+	    <legend>Adresse client</legend>
+		  	<div id="Nom">
+		      <!-- noms -->
+		        <label for="Nom">Nom :</label>
+		        <input type="text" id="Nom" name="Nom" placeholder="votre nom..." size="30" maxlenght="10" autoocus="autofocus" required="veuiller saisir" />    
+		    </div> 
+		    <div id="Prénom">
+		        <!-- Prénom -->
+		      <label for="Prénom">Prénom :</label>	
+          <input type="text" id="Prénom" name="Prénom" placeholder="votre Prénom..." size="30" maxlenght="10" autoocus="autofocus" required="veuiller saisir"/>    
+		    </div>  
+		    <div id="Adresse">
+		    		<!-- Adresse -->
+		      <label for="nom">Adresse :</label>
+		    	<input type="text" name="Adresse" placeholder="le numéro et nom de la..." size="30"	maxlenght="10" autoocus="autofocus"  />    
+		    </div>
+		    <div id="code_postal">
+		      	<!-- Votre code postal -->
+		    	<label for="code_postal">Code postal :</label>
+		    	<input type="number" name="code_postal" placeholder="Votre code postal..." size="30" maxlenght="10" autoocus="autofocus" />    
+		    </div>
+		    <div id="Ville">
+		      	<!-- Ville -->
+		    	<label for="nom">Ville :</label>
+		    	<input type="text" name="Ville" placeholder="Votre Ville..." size="30" maxlenght="10" autoocus="autofocus" />    
+		    </div>
+          <input type="submit" value="ENVOIE"/>
+	      	<!--button type="submit" name="valider"> Envoyer le formulaire"</button>-->
+    </fieldset>
+	
+    <fieldset>
+      <legend>S'abonner</legend>
+        <div id="email">
+          <label for="E-Mail">E-Mail :</label>
+          <input type="text" name="E-Mail" placeholder="Votre E-Mail..." size="30" maxlenght="10" autoocus="autofocus" />    
+        </div>
+        <div id="button_2">
+          <input type="hidden" name="navigateur>" id="navigateur"/>
+          <input type="submit" value="valider" name="valider"/>
+        </div>
+    </fieldset>
+  </form>
+</body>
+</html>
+	
